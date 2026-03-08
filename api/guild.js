@@ -35,7 +35,7 @@ async function fetchMando(endpoint, body = {}) {
   return res.json();
 }
 
-module.exports = async function handler(req, res) {
+export default async function handler(req, res) {
   // CORS para desarrollo local
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET');
